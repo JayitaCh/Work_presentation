@@ -151,6 +151,64 @@ scrollable: true
 - How do driver behavioural characteristics influence the dynamics of ridesourcing operations? What are the threshold values for driver idle waiting time after completing a trip? What strategies do drivers adopt for passenger search once their waiting time tolerance is exceeded?
 - How do user behavioural traits affect their tolerance for waiting in ridesourcing systems? What is the threshold limit for user waiting time?
 - How do different passenger search strategies and ride-matching algorithms affect system performance in simulated scenarios?
+
+## Methodology
+::: panel-tabset
+### Simulation Components
+![](./media/PhD_1.png){.r-stretch .absolute width=100% height=auto}
+
+### Simulation Framework
+![](./media/PhD_2.png){fig-align="center" width=48% height=auto}
+
+:::
+
+## Outputs
+::: panel-tabset
+### Driver Behaviour-I
+::::{.columns}
+
+::: {.column width="50%" style="font-size:80%"}
+**High Demand**
+![](./media/PhD_D_1.png){.r-stretch .absolute width=50% height=auto}
+:::
+
+::: {.column width="50%" style="font-size:80%"}
+**Low Demand**
+![](./media/PhD_D_ld.png){.r-stretch .absolute width=50% height=auto}
+:::
+::::
+### Driver Behaviour-II
+![](./media/PhD_D_3.png){fig-align="center" width=80% height=auto}
+
+### User Behaviour
+::::{.columns}
+
+::: {.column width="50%" style="font-size:80%"}
+**High Demand**
+![](./media/PhD_R_hd.png){.r-stretch .absolute width=50% height=auto}
+:::
+
+::: {.column width="50%" style="font-size:80%"}
+**Low Demand**
+![](./media/PhD_R_ld.png){.r-stretch .absolute width=50% height=auto}
+:::
+::::
+
+### Effects on Cruising Ratio
+::::{.columns}
+
+::: {.column width="70%"}
+![](./media/PhD_Sim.png){.r-stretch .absolute width=75% height=auto}
+:::
+
+::: {.column style="width:32%;font-size:60%;margin-left:46rem;"}
+- Cruising ratio is mostly dependent on different scenarios for passenger search strategies. 
+- The scenario where the drivers either park or drive to demand hotspots is observed to have low cruising ratio compared to the other two especially at high demand levels.
+- Higher cruising ratios are observed for the matching 1 and 2 compared to matching 3.
+:::
+::::
+
+:::
 <!-- Project 3 -->
 
 # <span style="color:grey;font-size:0.5em;line-height:1.0; display:inline-block;"> Research Project,<br> ITS, University of Leeds </span>
