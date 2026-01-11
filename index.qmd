@@ -1,0 +1,282 @@
+---
+title: "Work Experience"
+subtitle: "Agent-based Modeling | Transport Modeling | Spatial Analytics"
+author: Jayita Chakraborty, _PhD_<br>
+        Data Scientist | University of Leeds<br>
+        Jan 12, 2026
+title-slide-attributes:
+    data-background-image: ./Background.png
+    data-background-size: cover
+    data-background-opacity: "0.5"
+    data-background-color: "#000000"
+    style: "color: white;"
+format:
+  revealjs: 
+    slide-number: true
+    slide-level: 7
+    preview-links: auto
+    css: styles.css
+    # footer: 'Jan 12, 2026'
+embed-resources: True
+width: 1000
+scrollable: true
+---
+# <span style="color:grey;font-size:0.5em;line-height:1.0; display:inline-block;"> Research Project,<br> School of Geography, University of Leeds </span>
+<font face="Segoe UI" size=20px> **Analysing Global Policy Responses to COVID-19** </font>
+<!-- Project 1 -->
+
+## Background
+- <span style="font-size:80%;">Studying rapid decisions to inform future responses to similar crises.</span>
+- <span style="font-size:80%;">Identify gaps in preparedness and areas for improvement.</span>
+- <span style="font-size:80%;">Evaluate the effectiveness of different strategies and inform the development of policies and procedures to better handle future emergencies.</span>
+
+**_RQ: What mechanisms drive the rapid and homogeneous diffusion of lockdown policies across heterogeneous countries, and how can these mechanisms be captured through agent-based simulation?_**
+
+## Methodology
+::: panel-tabset
+### Agent Characteristics
+::: {.html}
+<div style="transform: scale(0.9); transform-origin: top left;">
+<table>
+  <thead>
+  <tr>
+    <th>Attributes</th>
+    <th>Characteristics</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>GDP</td>
+    <td>National income per country that is read from data</td>
+  </tr>
+  <tr>
+    <td>Democracy</td>
+    <td>Democracy index per country that is read from data</td>
+  </tr>
+  <tr>
+    <td>Population Density</td>
+    <td>Average Population density per country that is read from data</td>
+  </tr>
+  <tr>
+    <td>Covid Cases</td>
+    <td>Covid Cases per thousand population (normalized on average)</td>
+  </tr>
+  <tr>
+    <td>Initial State of policy</td>
+    <td>Adopted policy measure on March 1, 2020</td>
+  </tr>
+  <tr>
+    <td>Distance (Minimum Difference)</td>
+    <td>Key variable of the model in that defines the distance between some agent and all other agents</td>
+  </tr>
+  <tr>
+    <td>Social Threshold</td>
+    <td>A parameter incorporated to influence the policy adoption of the agent. The parameter is calculated based on the following equation:
+    $$
+    ST = e^{\text{Covid Cases}} \times (\text{Base Threshold})^{2} \times \text{Lockdown Adoption Probability}
+    $$
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+:::
+### Model Framework
+::::{.columns}
+
+::: {.column width="60%"}
+![](./media/Cov_ABM.png){.r-stretch .absolute width=70% height=auto}
+:::
+
+::: {.column style="width:40%; font-size: 50%;margin-left:44rem;margin-top:-4rem;"}
+:::{.incremental}
+**Base threshold:**
+
+  - A parameter introduced to affect the social threshold value of the countries
+  - Ranges from 0.02 to 0.25
+  - Optimal value 0.13
+:::
+:::{.incremental}
+**Peer size:**
+
+  - The number of countries effective in influencing policy decision.
+  - Ranges from 10 to 25.
+  - Optimal value 18.
+:::
+:::{.incremental}
+**Lockdown adoption probability:**
+
+  - The probability of countries to adopt a lockdown on their own.
+  - Ranges from 0.0002 to 0.07.
+  - Optimal value 0.01.
+:::
+
+:::
+
+::::
+:::
+
+## Outputs
+::: panel-tabset
+### Mean Prediction vs Actual Data
+![](./media/Predicted_plot.png){.r-stretch .absolute width=105% height=auto}
+
+### Geo-Visualisation
+![](./media/CovidMap.gif){.r-stretch .absolute width=105% height=auto}
+:::
+
+<!-- Project 2 -->
+
+# <span style="color:grey;font-size:0.5em;line-height:1.0; display:inline-block;"> PhD Research Project,<br> IIT, Kharagpur & Curtin University </span>
+<font face="Segoe UI" size=100> **A Simulation-based assessment of demand-supply interactions for Ridesourcing services in an urban environment** </font>
+
+## Background
+::::{.columns}
+
+::: {.column width="50%"}
+![](./media/RC1.gif){.r-stretch .absolute .fragment width=100% height=auto}
+:::
+::: {.column .fragment style="width:50%;font-size: 70%;margin-left:33rem;background-color:rgba(234, 237, 238, 0.7);position:relative; z-index:999;" .incremental}
+- Demand-supply imbalance
+- Increases overall VKTs of ridesourcing vehicles compared to the passenger using his or her personal vehicle to conduct the same trip 
+- Competition with other motorised modes
+- The operation of the TNCs are yet to have a clear picture before the regulators, making it difficult for the regulators to define these services within suitable legal framework (Flores & Rayle, 2017).
+
+:::
+::::
+
+## Research Question {style="font-size:80%"}
+- Which operational parameters are most critical for evaluating the performance and efficiency of ridesourcing systems?
+- How do driver behavioural characteristics influence the dynamics of ridesourcing operations? What are the threshold values for driver idle waiting time after completing a trip? What strategies do drivers adopt for passenger search once their waiting time tolerance is exceeded?
+- How do user behavioural traits affect their tolerance for waiting in ridesourcing systems? What is the threshold limit for user waiting time?
+- How do different passenger search strategies and ride-matching algorithms affect system performance in simulated scenarios?
+<!-- Project 3 -->
+
+# <span style="color:grey;font-size:0.5em;line-height:1.0; display:inline-block;"> Research Project,<br> ITS, University of Leeds </span>
+<font face="Segoe UI" size=100> **Where do e-cargo bikes go?** </font>
+
+## Research Question
+![](./media/GPS_flowchart.png){width=100% height=auto style="overflow: hidden;display: block; margin: 0 auto;" }
+
+## Challenges
+
+- Problematic points
+- Discrepancy between datasets
+- Missing information
+
+## Methodology
+::: panel-tabset
+### Phantom Bikes
+::::{.columns}
+
+::: {.column width="50%"}
+![](./media/PB_flow.png){.r-stretch .absolute width=50% height=auto}
+:::
+
+::: {.column style="width:50%;font-size: 70%;margin-left:33rem;" .incremental}
+- The bike is moving but the route points are being recorded in the wrong place
+- Records random “Dodgy” or erroneous coordinates
+- Conditions based on rolling average distance, speed to next point and time difference
+
+:::
+::::
+### Time to First Fix-I
+::::{.columns}
+
+::: {.column width="50%"}
+![](./media/TTFF_flow_1.png){.r-stretch .absolute width=50% height=auto}
+:::
+
+::: {.column style="width:50%;font-size: 70%;margin-left:33rem;" .incremental}
+- Bike not moving; but the GPS records points in the wrong place. 
+- GPS receiver tries to acquire navigation data and estimates a position.
+- Filter points based on whether the point is random compared to its neighbours
+
+:::
+::::
+### Time to First Fix-II
+::::{.columns}
+
+::: {.column width="50%"}
+![](./media/TTFF_flow_2.png){.r-stretch .absolute width=50% height=auto}
+:::
+
+::: {.column style="width:50%;font-size: 70%;margin-left:33rem;" .incremental}
+- Issues with GPS signal; May have occurred due to GPS device not being turned on.
+- Missing information on route
+- Search and insert missing points if available
+:::
+::::
+### Motion Map Gap
+::::{.columns}
+
+::: {.column width="50%"}
+![](./media/MMG_flow.png){.r-stretch .absolute width=50% height=auto}
+:::
+
+::: {.column style="width:50%;font-size: 70%;margin-left:33rem;" .incremental}
+- Bike is on the move; Interference with GPS signal.
+- Missing information on route
+- Search and insert missing points if available
+:::
+::::
+### Speedy Bikes
+::::{.columns}
+
+::: {.column width="50%"}
+![](./media/SB_flow.png){.r-stretch .absolute width=50% height=auto}
+:::
+
+::: {.column style="width:50%;font-size: 70%;margin-left:33rem;" .incremental}
+- Speed of the bikes higher than usual
+- Bikes being transported in car/train
+- Incorrect information on route
+- Update speed and identify whether the vehicle was being transported
+
+:::
+::::
+### Trip Segmentation
+::::{.columns}
+
+::: {.column width="50%"}
+![](./media/TS_flow.png){.r-stretch .absolute width=45% height=auto}
+:::
+
+::: {.column style="width:50%;font-size: 70%;margin-left:33rem;" .incremental}
+- Identifying trips from the cleaned GPS points
+- Identification of stop criteria
+- Tsui (2005) suggested dwell time between trips can vary from 120s to 600s.
+
+:::
+::::
+### Elevation Gain
+::::{.columns}
+
+::: {.column width="50%"}
+![](./media/EG_flow.png){.r-stretch .absolute width=50% height=auto}
+:::
+
+::: {.column style="width:50%;font-size: 70%;margin-left:33rem;" .incremental}
+- Use <font color="red">OS Terrain 50 DEM</font> – an open dataset that is more accurate than often used NASA SRTM data 
+- Use R _Extract_ function – adds Elevation value to the SF dataframe of route points
+- Calculate elevation gain/descent for each trip
+
+:::
+::::
+:::
+
+## Outputs
+::::{.columns}
+
+::: {.column width="50%"}
+Before applying algorithm
+![](./media/Results_1.png){.r-stretch .absolute width=50% height=auto}
+:::
+
+::: {.column width="50%"}
+After applying algorithm
+![](./media/Results_2.png){.r-stretch .absolute width=50% height=auto}
+:::
+
+::::

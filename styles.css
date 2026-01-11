@@ -1,0 +1,54 @@
+
+
+.border {
+  border: 1px solid #dee2e6;
+}
+
+.border-thick {
+  border-width: 0px;
+}
+
+.panel-tabset {
+  margin-top: -30px;
+}
+
+.panel-tabset [role=tab] {
+  border-radius: 10px;
+  padding: 5px 0px;
+  margin-right: 1px;
+  background-color: #eee;
+}
+
+.panel-tabset-tabby a {
+  font-size: 0.4em;
+  font-weight: bold;
+  color: black;
+}
+
+.reveal table {
+  font-size: 0.65em;
+  border-collapse: collapse;
+}
+
+.reveal .MathJax {
+  font-size: 70%;
+}
+/* 
+.reveal .footer {
+  color: white; /*specify the footer color */
+/* }
+
+.reveal .footer .slide-dark {
+  color: white;
+}
+
+.reveal .footer .slide-light {
+  color: black;
+}
+
+.centered-img {
+  display: flex; 
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+} */
