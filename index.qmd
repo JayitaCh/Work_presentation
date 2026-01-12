@@ -2,14 +2,14 @@
 title: "Work Experience"
 subtitle: "Agent-based Modeling | Transport Modeling | Spatial Analytics"
 author: Jayita Chakraborty, _PhD_<br>
-        Data Scientist | University of Leeds<br>
-        Jan 12, 2026
+        Former Data Scientist | University of Leeds<br>
+        <span style="font-size:28px">Jan 12, 2026</span>
 title-slide-attributes:
     data-background-image: ./Background.png
     data-background-size: cover
     data-background-opacity: "0.5"
     data-background-color: "#000000"
-    style: "color: white;"
+    style: "color: white;"    
 format:
   revealjs: 
     slide-number: true
